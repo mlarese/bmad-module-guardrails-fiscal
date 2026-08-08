@@ -1,0 +1,24 @@
+{
+  "name": "guardrails-fiscal",
+  "owner": "mlarese",
+  "description": "Guardrails Fiscal: fonti fiscali e legali applicate, contabilità operativa, bandi, finanza agevolata e aggiornamenti fiscali live.",
+  "plugins": [
+    {
+      "name": "grf",
+      "source": "./src",
+      "description": "Presidio fiscale e di finanza agevolata: requisiti, scadenze, spese ammissibili e rendicontazione, sempre con fonte primaria e data di verifica. Include un workflow di ricerca live sugli aggiornamenti fiscali, i bandi e gli incentivi.",
+      "version": "1.16.0",
+      "author": "mlarese",
+      "homepage": "https://github.com/mlarese/bmad-module-guardrails-fiscal",
+      "repository": "https://github.com/mlarese/bmad-module-guardrails-fiscal",
+      "license": "MIT",
+      "skills": [
+        "src/skills/grf-setup",
+        "src/skills/grf-profile",
+        "src/skills/grf-board",
+        "src/skills/grl-agent-fiscal",
+        "src/skills/grl-fiscal-updates"
+      ]
+    }
+  ]
+}
