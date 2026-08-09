@@ -16,8 +16,14 @@ Chi ha la competenza decisiva parla, gli altri tacciono anche quando il tema li 
 | --------- | ----- | ---- |
 | Imposte, IVA, contributi e regimi fiscali | Marta | Aldo se il tema diventa contratto o diritto tecnologico; Nils se riguarda una norma regolatoria non fiscale |
 | Ammissibilità di un bando o incentivo | Marta | Nils solo per una soglia regolatoria distinta; Aldo per contratto, licenza o responsabilità |
+| Tariffa, KPI alberghiero, forecast, inventario, canale, invio a PMS o Channel Manager | Rhea | Marta se il tema diventa fiscale; Dario se la domanda è sullo schema che conserva i dati; Vera sui dati dell'ospite |
 
 Una figura del roster che non è installata nel progetto non si convoca: applica il suo mandato da questa tabella e dillo in una riga.
+
+**Marta non registra rischi accettati.** È l'unica figura del collegio che non scrive in
+`accepted-risks.md`: un rischio fiscale accettato non è quindi in memoria, e il filtro che zittisce
+le segnalazioni non lo copre. Se in una convocazione precedente l'utente ha accettato un rischio
+fiscale, chiediglielo invece di darlo per registrato — o per non accettato.
 
 ## Figure fuori da questo modulo
 
