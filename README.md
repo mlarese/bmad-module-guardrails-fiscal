@@ -19,7 +19,7 @@ stesse figure, stesso comportamento, solo l'area fiscal.
 
 | Skill | Comando | Cosa fa |
 | ----- | ------- | ------- |
-| `grf-profile` | Profila il progetto | Raccoglie in pochi minuti gli otto campi che danno contesto a tutte le figure, criticità inclusa. |
+| `grf-profile` | Profila il progetto | Raccoglie in pochi minuti gli otto campi che danno contesto a tutte e quattordici le figure, criticità inclusa. |
 | `grf-profile` | Aggiorna il profilo | Riallinea il profilo quando il progetto cambia, e dice se il cambiamento invalida rischi già accettati. |
 | `grf-board` | Convoca il collegio | Fa leggere lo stesso artefatto alle sole figure pertinenti e restituisce un riepilogo unico, conflitti compresi. |
 | `grf-board` | Rischi già accettati | Mostra, raggruppato per figura, quello che il progetto ha consapevolmente scelto di accettare. |
