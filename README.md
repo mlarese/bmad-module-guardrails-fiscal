@@ -1,59 +1,52 @@
 # Guardrails Fiscal (`grf`)
 
-Presidio fiscale e di finanza agevolata: requisiti, scadenze, spese ammissibili e rendicontazione, sempre con fonte primaria e data di verifica. Include un workflow di ricerca live sugli aggiornamenti fiscali, i bandi e gli incentivi.
+A focused BMad module for tax, accounting operations, grants, incentives, and live fiscal updates. It checks requirements, deadlines, eligible expenses, and reporting against primary sources.
 
-Modulo BMad. È una porzione del bundle [Guardrails](https://github.com/mlarese/bmad-module-guardrails):
-stesse figure, stesso comportamento, solo l'area fiscal.
+This is a focused BMad module in the [Guardrails](https://github.com/mlarese/bmad-module-guardrails)
+bundle. It keeps the same behavior and shared memory while installing only the figures and
+workflows for the fiscal area.
 
-> **Generato.** Questo repository è prodotto da `tools/build_modules.py` nel
-> repository [bmad-module-guardrails](https://github.com/mlarese/bmad-module-guardrails).
-> Le modifiche si fanno lì e poi si rigenera: qui vengono sovrascritte.
+> **Generated.** This repository is produced by `tools/build_modules.py` in the
+> [bmad-module-guardrails](https://github.com/mlarese/bmad-module-guardrails) repository.
+> Make changes there and regenerate; local changes here will be overwritten.
 
-## Figure
+## Agents
 
-| Figura | Ruolo | Skill | Cosa presidia |
-| ------ | ----- | ----- | ------------- |
-| 🧾 Marta | Fiscalista e Finanza Agevolata | `grl-agent-fiscal` | Ricerca fonti fiscali, contabili e di finanza agevolata italiane ed europee, verifica requisiti, scadenze, spese ammissibili e rendicontazione, e traduce tutto in un verdetto… |
+| Agent | Role | Skill | Focus |
+| ----- | ---- | ----- | ----- |
+| 🧾 Marta | Tax and Incentives Specialist | `grl-agent-fiscal` | Taxes, VAT, grants, incentives, tax credits, and reporting. |
 
-## Skill e workflow
+## Skills and workflows
 
-| Skill | Comando | Cosa fa |
-| ----- | ------- | ------- |
-| `grf-profile` | Profila il progetto | Raccoglie in pochi minuti gli otto campi che danno contesto a tutte le figure, criticità inclusa. |
-| `grf-profile` | Aggiorna il profilo | Riallinea il profilo quando il progetto cambia, e dice se il cambiamento invalida rischi già accettati. |
-| `grf-board` | Convoca il collegio | Fa leggere lo stesso artefatto alle sole figure pertinenti e restituisce un riepilogo unico, conflitti compresi. |
-| `grf-board` | Rischi già accettati | Mostra, raggruppato per figura, quello che il progetto ha consapevolmente scelto di accettare. |
-| `grf-board` | Gate di rilascio | Verifica una release identificata e restituisce GO, GO_CON_CONDIZIONI, NO_GO o EVIDENZA_INSUFFICIENTE. |
-| `grl-fiscal-updates` | Ultime novità fiscali | Recupera norme fiscali, circolari, bollettini, emendamenti, bandi e incentivi nel periodo indicato, con ricerca live, matrice di copertura, lineage di vigenza e due gate bmad-review. |
-| `grl-automation` | Instrada un'automazione | Classifica lo scenario, sceglie agenti e workflow BMad e dichiara capability mancanti, scope e approvazioni, includendo social/content e creative video. |
-| `grl-automation` | Prepara un piano eseguibile | Costruisce passi idempotenti con input, output, precondizioni, rischio, approvazione e rollback. |
-| `grl-automation` | Esegui controlli read-only | Raccoglie evidenze e confronti riproducibili senza modificare sistemi esterni. |
-| `grl-automation` | Prepara un dry-run | Genera e valida diff o payload senza spendere, pubblicare o applicare side effect. |
-| `grl-automation` | Esegui dopo approvazione | Applica solo lo scope approvato, registra prima/dopo e osserva il risultato; in caso di errore attiva il rollback. |
-| `grl-automation` | Riprendi un'automazione | Riprende un run esistente dal primo passo non concluso senza duplicare scritture o side effect. |
+| Skill | Purpose |
+| ----- | ------- |
+| `grf-profile` | Project profile | Collects the project context shared by every installed figure. |
+| `grf-board` | Multidisciplinary review | Convenes the relevant figures on one artifact and returns a review summary or release verdict. |
+| `grl-fiscal-updates` | Live fiscal updates | Searches primary sources for tax rules, circulars, grants, incentives, amendments, and deadlines in a defined period. |
+| `grl-automation` | Controlled automation | Routes work from read-only checks through dry-run to observable execution, with explicit approvals and rollback. |
 
-## Installazione
+## Installation
 
 ```
 bmad install grf
 ```
 
-Poi, come primo passo, `grf-profile`: raccoglie il profilo di progetto — settore,
-dati trattati, mercato, stack, criticità — e da lì ogni figura deriva quanto essere
-severa. Senza profilo il default resta `normal` e le figure partono senza contesto.
+As a first step, run `grf-profile`. It collects the project profile — sector, data,
+market, stack, and criticality — so each figure can calibrate its review. Without a profile,
+the default remains `normal` and the figures start without context.
 
-## Memoria condivisa
+## Shared memory
 
-Il profilo vive in `{project-root}/_bmad/memory/grl-shared/project-profile.md`, insieme
-a `decisions.md` e `accepted-risks.md`. Il percorso è lo stesso per tutti i moduli
-Guardrails: installandone due, il profilo resta uno solo e si compila una volta.
+The profile lives in `{project-root}/_bmad/memory/grl-shared/project-profile.md`, together
+with `decisions.md` and `accepted-risks.md`. All Guardrails modules use the same path, so two
+installed modules still share one profile.
 
-## Convivenza con il bundle
+## Using it with the bundle
 
-Questo modulo installa skill con **lo stesso nome** del bundle `grl` — `grl-agent-fiscal`
-sta identica in entrambi. Bundle e moduli tematici non vanno installati insieme nello
-stesso progetto: si sceglie il bundle completo, oppure i moduli delle aree che servono.
+This module installs skills with **the same names** as the `grl` bundle — `grl-agent-fiscal`
+is identical in both. Do not install the full bundle and thematic modules in the same project:
+choose the complete bundle, or only the thematic modules you need.
 
-## Licenza
+## License
 
 MIT.
