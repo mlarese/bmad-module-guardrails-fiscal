@@ -7,7 +7,7 @@
       "name": "grf",
       "source": "./src",
       "description": "Presidio fiscale e di finanza agevolata: requisiti, scadenze, spese ammissibili e rendicontazione, sempre con fonte primaria e data di verifica. Include un workflow di ricerca live sugli aggiornamenti fiscali, i bandi e gli incentivi.",
-      "version": "1.17.0",
+      "version": "1.18.0",
       "author": "mlarese",
       "homepage": "https://github.com/mlarese/bmad-module-guardrails-fiscal",
       "repository": "https://github.com/mlarese/bmad-module-guardrails-fiscal",
@@ -17,7 +17,8 @@
         "src/skills/grf-profile",
         "src/skills/grf-board",
         "src/skills/grl-agent-fiscal",
-        "src/skills/grl-fiscal-updates"
+        "src/skills/grl-fiscal-updates",
+        "src/skills/grl-automation"
       ]
     }
   ]
