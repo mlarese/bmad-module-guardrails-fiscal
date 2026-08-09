@@ -10,7 +10,7 @@
 code: grf
 name: Guardrails Fiscal
 description: "Presidio fiscale e di finanza agevolata: requisiti, scadenze, spese ammissibili e rendicontazione, sempre con fonte primaria e data di verifica. Include un workflow di ricerca live sugli aggiornamenti fiscali, i bandi e gli incentivi."
-module_version: 1.16.0
+module_version: 1.17.0
 default_selected: false
 
 module_greeting: >

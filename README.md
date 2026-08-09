@@ -24,6 +24,7 @@ stesse figure, stesso comportamento, solo l'area fiscal.
 | `grf-profile` | Aggiorna il profilo | Riallinea il profilo quando il progetto cambia, e dice se il cambiamento invalida rischi già accettati. |
 | `grf-board` | Convoca il collegio | Fa leggere lo stesso artefatto alle sole figure pertinenti e restituisce un riepilogo unico, conflitti compresi. |
 | `grf-board` | Rischi già accettati | Mostra, raggruppato per figura, quello che il progetto ha consapevolmente scelto di accettare. |
+| `grf-board` | Gate di rilascio | Verifica una release identificata e restituisce GO, GO_CON_CONDIZIONI, NO_GO o EVIDENZA_INSUFFICIENTE. |
 | `grl-fiscal-updates` | Ultime novità fiscali | Recupera norme fiscali, circolari, bollettini, emendamenti, bandi e incentivi nel periodo indicato, con ricerca live, matrice di copertura, lineage di vigenza e due gate bmad-review. |
 
 ## Installazione
