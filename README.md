@@ -19,7 +19,6 @@ stesse figure, stesso comportamento, solo l'area fiscal.
 
 | Skill | Comando | Cosa fa |
 | ----- | ------- | ------- |
-| `grf-setup` | Installa Guardrails Fiscal | Registra Guardrails, le figure, le stanze tematiche di party mode e le voci di help. Non crea la memoria condivisa. |
 | `grf-profile` | Profila il progetto | Raccoglie in pochi minuti gli otto campi che danno contesto a tutte le figure, criticità inclusa. |
 | `grf-profile` | Aggiorna il profilo | Riallinea il profilo quando il progetto cambia, e dice se il cambiamento invalida rischi già accettati. |
 | `grf-board` | Convoca il collegio | Fa leggere lo stesso artefatto alle sole figure pertinenti e restituisce un riepilogo unico, conflitti compresi. |
